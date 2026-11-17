@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Messages | Shine & Sparkle Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================= ADMIN LAYOUT ================= -->
+    <div class="admin-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Admin Logo -->
+            <a
+                class="logo"
+                href="admin-dashboard.html"
+            >
+                S <span>&</span> S
+            </a>
+
+
+            <!-- Admin Navigation -->
+            <nav>
+
+                <a href="admin-dashboard.html">
+                    <span>▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="admin-products.html">
+                    <span>◇</span>
+                    <span>Products</span>
+                </a>
+
+                <a href="admin-orders.html">
+                    <span>▤</span>
+                    <span>Orders</span>
+                </a>
+
+                <a href="admin-customers.html">
+                    <span>♙</span>
+                    <span>Customers</span>
+                </a>
+
+                <a
+                    href="admin-messages.html"
+                    class="active"
+                >
+                    <span>✉</span>
+                    <span>Messages</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= ADMIN MAIN AREA ================= -->
+        <section class="admin-main">
+
+
+            <!-- ================= TOP BAR ================= -->
+            <header class="admin-top">
+
+                <strong>
+                    Shine & Sparkle Admin
+                </strong>
+
+                <div class="d-flex flex-wrap justify-content-end align-items-center gap-2">
+
+                    <a
+                        href="index.html"
+                        class="btn btn-secondary"
+                    >
+                        View Store
+                    </a>
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-admin-logout
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= MESSAGES CONTENT ================= -->
+            <main class="admin-content">
+
+
+                <!-- Page Header -->
+                <div class="admin-title d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+
+                    <div>
+
+                        <h1>
+                            Messages
+                        </h1>
+
+                        <p class="muted">
+                            Customer inquiries received through
+                            the contact page.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-mark-all-read
+                    >
+                        Mark All Read
+                    </button>
+
+                </div>
+
+
+                <!-- ================= MESSAGE GRID ================= -->
+                <div class="row g-3 message-grid">
+
+
+                    <!-- Message 1 -->
+                    <div class="col-md-6">
+
+                        <div class="panel">
+
+                        <span class="badge badge-blue">
+                            New
+                        </span>
+
+                        <h2>
+                            Question about Royal Necklace
+                        </h2>
+
+                        <p class="muted">
+                            From: Riya Patel • Today
+                        </p>
+
+                        <p>
+                            Hi, is the Royal Necklace suitable for
+                            a festive event? I would also like to
+                            know about matching earrings.
+                        </p>
+
+
+                        <!-- Message Actions -->
+                        <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                            <button
+                                class="btn btn-primary"
+                                type="button"
+                            >
+                                Reply
+                            </button>
+
+                            <button
+                                class="btn btn-secondary"
+                                type="button"
+                                data-archive-message
+                            >
+                                Archive
+                            </button>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Message 2 -->
+                    <div class="col-md-6">
+
+                        <div class="panel">
+
+                        <span class="badge badge-green">
+                            Read
+                        </span>
+
+                        <h2>
+                            Product Availability
+                        </h2>
+
+                        <p class="muted">
+                            From: Anaya Mehta • Yesterday
+                        </p>
+
+                        <p>
+                            Hello, I am looking for a classic bangle
+                            in a gold finish. Is it available in
+                            your collection?
+                        </p>
+
+
+                        <!-- Message Actions -->
+                        <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                            <button
+                                class="btn btn-primary"
+                                type="button"
+                            >
+                                Reply
+                            </button>
+
+                            <button
+                                class="btn btn-secondary"
+                                type="button"
+                                data-archive-message
+                            >
+                                Archive
+                            </button>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Message 3 -->
+                    <div class="col-md-6">
+
+                        <div class="panel">
+
+                        <span class="badge badge-yellow">
+                            Pending
+                        </span>
+
+                        <h2>
+                            Custom Jewelry Request
+                        </h2>
+
+                        <p class="muted">
+                            From: Kavya Joshi • 2 days ago
+                        </p>
+
+                        <p>
+                            I would like a coordinated choker and
+                            pendant set for a wedding function.
+                            Please share suitable options.
+                        </p>
+
+
+                        <!-- Message Actions -->
+                        <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                            <button
+                                class="btn btn-primary"
+                                type="button"
+                            >
+                                Reply
+                            </button>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </main>
+
+        </section>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

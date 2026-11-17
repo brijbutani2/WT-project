@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Shine & Sparkle Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================= ADMIN LAYOUT ================= -->
+    <div class="admin-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Admin Logo -->
+            <a
+                class="logo"
+                href="admin-dashboard.html"
+            >
+                S <span>&</span> S
+            </a>
+
+
+            <!-- Admin Navigation -->
+            <nav>
+
+                <a href="admin-dashboard.html">
+                    <span>  ▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a
+                    href="admin-products.html"
+                    class="active"
+                >
+                    <span>◇</span>
+                    <span>Products</span>
+                </a>
+
+                <a href="admin-orders.html">
+                    <span>▤</span>
+                    <span>Orders</span>
+                </a>
+
+                <a href="admin-customers.html">
+                    <span>♙</span>
+                    <span>Customers</span>
+                </a>
+
+                <a href="admin-messages.html">
+                    <span>✉</span>
+                    <span>Messages</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= ADMIN MAIN AREA ================= -->
+        <section class="admin-main">
+
+
+            <!-- ================= TOP BAR ================= -->
+            <header class="admin-top">
+
+                <strong>
+                    Shine & Sparkle Admin
+                </strong>
+
+                <div class="d-flex flex-wrap justify-content-end align-items-center gap-2">
+
+                    <a
+                        href="index.html"
+                        class="btn btn-secondary"
+                    >
+                        View Store
+                    </a>
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-admin-logout
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= PRODUCTS CONTENT ================= -->
+            <main class="admin-content">
+
+
+                <!-- Page Header -->
+                <div class="admin-title d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+
+                    <div>
+
+                        <h1>
+                            Products
+                        </h1>
+
+                        <p class="muted">
+                            Manage the jewelry catalog.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn btn-primary"
+                        type="button"
+                    >
+                        + Add Product
+                    </button>
+
+                </div>
+
+
+                <!-- ================= SEARCH & FILTER ================= -->
+                <div class="d-flex flex-wrap gap-2 mb-3">
+
+                    <input
+                        class="form-control"
+                        style="max-width: 350px;"
+                        type="text"
+                        id="productSearch"
+                        placeholder="Search products..."
+                    >
+
+                    <select
+                        class="form-select"
+                        style="max-width: 240px;"
+                        id="categoryFilter"
+                    >
+
+                        <option value="">
+                            All Categories
+                        </option>
+
+                        <option value="Earrings">
+                            Earrings
+                        </option>
+
+                        <option value="Rings">
+                            Rings
+                        </option>
+
+                        <option value="Necklaces">
+                            Necklaces
+                        </option>
+
+                        <option value="Bangles">
+                            Bangles
+                        </option>
+
+                        <option value="Chokers">
+                            Chokers
+                        </option>
+
+                        <option value="Jhumkas">
+                            Jhumkas
+                        </option>
+
+                        <option value="Pendants">
+                            Pendants
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ================= PRODUCT GRID ================= -->
+                <div
+                    class="row g-3"
+                    id="productGrid"
+                >
+
+
+                    <!-- Product 1 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="classic earring"
+                    >
+
+                        <img
+                            src="assets/images/earring.jpg"
+                            alt="Classic Earring"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Earrings
+                            </span>
+
+                            <h3>
+                                Classic Earring
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-001
+                            </p>
+
+                            <strong>
+                                ₹699
+                            </strong>
+
+
+                            <!-- Product Actions -->
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="elegant ring"
+                    >
+
+                        <img
+                            src="assets/images/Ring.jpg"
+                            alt="Elegant Ring"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Rings
+                            </span>
+
+                            <h3>
+                                Elegant Ring
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-002
+                            </p>
+
+                            <strong>
+                                ₹799
+                            </strong>
+
+
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="royal necklace"
+                    >
+
+                        <img
+                            src="assets/images/necklace.jpg"
+                            alt="Royal Necklace"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Necklaces
+                            </span>
+
+                            <h3>
+                                Royal Necklace
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-003
+                            </p>
+
+                            <strong>
+                                ₹1,299
+                            </strong>
+
+
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Product 4 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="classic bangle"
+                    >
+
+                        <img
+                            src="assets/images/bangle.webp"
+                            alt="Classic Bangle"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Bangles
+                            </span>
+
+                            <h3>
+                                Classic Bangle
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-004
+                            </p>
+
+                            <strong>
+                                ₹999
+                            </strong>
+
+
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Product 5 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="choker set"
+                    >
+
+                        <img
+                            src="assets/images/choker set.webp"
+                            alt="Choker Set"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Chokers
+                            </span>
+
+                            <h3>
+                                Choker Set
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-005
+                            </p>
+
+                            <strong>
+                                ₹1,099
+                            </strong>
+
+
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Product 6 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="pearl jhumka"
+                    >
+
+                        <img
+                            src="assets/images/jhumkha.webp"
+                            alt="Pearl Jhumka"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Jhumkas
+                            </span>
+
+                            <h3>
+                                Jhumka
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-006
+                            </p>
+
+                            <strong>
+                                ₹899
+                            </strong>
+
+
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Product 7 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="diamond pendant"
+                    >
+
+                        <img
+                            src="assets/images/pendant.webp"
+                            alt="Diamond Pendant"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Pendants
+                            </span>
+
+                            <h3>
+                                Diamond Pendant
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-007
+                            </p>
+
+                            <strong>
+                                &#8377;749
+                            </strong>
+
+
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Product 8 -->
+                    <div class="col-md-6 col-xl-4">
+
+                        <article
+                            class="card product-card shadow-none"
+                        data-name="party earrings"
+                    >
+
+                        <img
+                            src="assets/images/party earrings.webp"
+                            alt="Party Earrings"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="tag">
+                                Earrings
+                            </span>
+
+                            <h3>
+                                Party Earrings
+                            </h3>
+
+                            <p class="muted">
+                                SKU: SS-008
+                            </p>
+
+                            <strong>
+                                &#8377;949
+                            </strong>
+
+
+                            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                >
+                                    Edit
+                                </button>
+
+                                <button
+                                    class="btn btn-danger"
+                                    type="button"
+                                    data-delete-product
+                                >
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+            </main>
+
+        </section>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

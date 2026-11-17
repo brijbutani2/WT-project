@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Shine & Sparkle Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================= ADMIN LAYOUT ================= -->
+    <div class="admin-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Admin Logo -->
+            <a
+                class="logo"
+                href="admin-dashboard.html"
+            >
+                S <span>&</span> S
+            </a>
+
+
+            <!-- Admin Navigation -->
+            <nav>
+
+                <a
+                    href="admin-dashboard.html"
+                    class="active"
+                >
+                    <span>▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="admin-products.html">
+                    <span>◇</span>
+                    <span>Products</span>
+                </a>
+
+                <a href="admin-orders.html">
+                    <span>▤</span>
+                    <span>Orders</span>
+                </a>
+
+                <a href="admin-customers.html">
+                    <span>♙</span>
+                    <span>Customers</span>
+                </a>
+
+                <a href="admin-messages.html">
+                    <span>✉</span>
+                    <span>Messages</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= ADMIN MAIN AREA ================= -->
+        <section class="admin-main">
+
+
+            <!-- ================= TOP BAR ================= -->
+            <header class="admin-top">
+
+                <strong>
+                    Shine & Sparkle Admin
+                </strong>
+
+                <div class="d-flex flex-wrap justify-content-end align-items-center gap-2">
+
+                    <a
+                        href="index.html"
+                        class="btn btn-secondary"
+                    >
+                        View Store
+                    </a>
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-admin-logout
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= DASHBOARD CONTENT ================= -->
+            <main class="admin-content">
+
+
+                <!-- Page Header -->
+                <div class="admin-title d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+
+                    <div>
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+                        <p class="muted">
+                            Overview of your jewelry store.
+                        </p>
+
+                    </div>
+
+                    <a
+                        class="btn btn-primary"
+                        href="admin-products.html"
+                    >
+                        + Add Product
+                    </a>
+
+                </div>
+
+
+                <!-- ================= STATISTICS ================= -->
+                <div class="row g-3">
+
+
+                    <!-- Sales -->
+                    <div class="col-sm-6 col-xl-3">
+
+                        <div class="stat">
+
+                            <div class="icon">
+                                ₹
+                            </div>
+
+                            <div class="muted">
+                                Sales
+                            </div>
+
+                            <h2>
+                                ₹48,920
+                            </h2>
+
+                            <span class="badge badge-green">
+                                +12.4%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Orders -->
+                    <div class="col-sm-6 col-xl-3">
+
+                        <div class="stat">
+
+                            <div class="icon">
+                                ▤
+                            </div>
+
+                            <div class="muted">
+                                Orders
+                            </div>
+
+                            <h2>
+                                126
+                            </h2>
+
+                            <span class="badge badge-blue">
+                                This month
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Products -->
+                    <div class="col-sm-6 col-xl-3">
+
+                        <div class="stat">
+
+                            <div class="icon">
+                                ◇
+                            </div>
+
+                            <div class="muted">
+                                Products
+                            </div>
+
+                            <h2>
+                                48
+                            </h2>
+
+                            <span class="badge badge-yellow">
+                                8 categories
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Customers -->
+                    <div class="col-sm-6 col-xl-3">
+
+                        <div class="stat">
+
+                            <div class="icon">
+                                ♙
+                            </div>
+
+                            <div class="muted">
+                                Customers
+                            </div>
+
+                            <h2>
+                                842
+                            </h2>
+
+                            <span class="badge badge-green">
+                                +8.2%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ================= DASHBOARD GRID ================= -->
+                <div class="row g-3">
+
+
+                    <!-- ================= RECENT ORDERS ================= -->
+                    <div class="col-lg-8">
+
+                        <div class="panel">
+
+                            <h2>
+                                Recent Orders
+                            </h2>
+
+
+                            <div class="table-card table-responsive">
+
+                                <table class="table table-striped table-hover">
+
+                                    <thead>
+
+                                        <tr>
+
+                                            <th>
+                                                Order
+                                            </th>
+
+                                            <th>
+                                                Customer
+                                            </th>
+
+                                            <th>
+                                                Amount
+                                            </th>
+
+                                            <th>
+                                                Status
+                                            </th>
+
+                                        </tr>
+
+                                    </thead>
+
+
+                                    <tbody>
+
+
+                                        <!-- Order 1 -->
+                                        <tr>
+
+                                            <td>
+                                                #SS1048
+                                            </td>
+
+                                            <td>
+                                                Priya Shah
+                                            </td>
+
+                                            <td>
+                                                ₹2,198
+                                            </td>
+
+                                            <td>
+
+                                                <span class="badge badge-green">
+                                                    Delivered
+                                                </span>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- Order 2 -->
+                                        <tr>
+
+                                            <td>
+                                                #SS1047
+                                            </td>
+
+                                            <td>
+                                                Riya Patel
+                                            </td>
+
+                                            <td>
+                                                ₹1,299
+                                            </td>
+
+                                            <td>
+
+                                                <span class="badge badge-blue">
+                                                    Shipped
+                                                </span>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- Order 3 -->
+                                        <tr>
+
+                                            <td>
+                                                #SS1046
+                                            </td>
+
+                                            <td>
+                                                Anaya Mehta
+                                            </td>
+
+                                            <td>
+                                                ₹899
+                                            </td>
+
+                                            <td>
+
+                                                <span class="badge badge-yellow">
+                                                    Processing
+                                                </span>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= ACTIVITY ================= -->
+                    <div class="col-lg-4">
+
+                        <div class="panel">
+
+                            <h2>
+                                Activity
+                            </h2>
+
+
+                            <ul class="activity">
+
+                                <li>
+                                    New order
+                                    <strong>
+                                        #SS1048
+                                    </strong>
+                                </li>
+
+                                <li>
+                                    Product
+                                    <strong>
+                                        Royal Necklace
+                                    </strong>
+                                    updated
+                                </li>
+
+                                <li>
+                                    New customer registered
+                                </li>
+
+                                <li>
+                                    Message received from
+                                    <strong>
+                                        Riya
+                                    </strong>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </main>
+
+        </section>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

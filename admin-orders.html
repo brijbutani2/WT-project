@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orders | Shine & Sparkle Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================= ADMIN LAYOUT ================= -->
+    <div class="admin-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Admin Logo -->
+            <a
+                class="logo"
+                href="admin-dashboard.html"
+            >
+                S <span>&</span> S
+            </a>
+
+
+            <!-- Admin Navigation -->
+            <nav>
+
+                <a href="admin-dashboard.html">
+                    <span>▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="admin-products.html">
+                    <span>◇</span>
+                    <span>Products</span>
+                </a>
+
+                <a
+                    href="admin-orders.html"
+                    class="active"
+                >
+                    <span>▤</span>
+                    <span>Orders</span>
+                </a>
+
+                <a href="admin-customers.html">
+                    <span>♙</span>
+                    <span>Customers</span>
+                </a>
+
+                <a href="admin-messages.html">
+                    <span>✉</span>
+                    <span>Messages</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= ADMIN MAIN AREA ================= -->
+        <section class="admin-main">
+
+
+            <!-- ================= TOP BAR ================= -->
+            <header class="admin-top">
+
+                <strong>
+                    Shine & Sparkle Admin
+                </strong>
+
+                <div class="d-flex flex-wrap justify-content-end align-items-center gap-2">
+
+                    <a
+                        href="index.html"
+                        class="btn btn-secondary"
+                    >
+                        View Store
+                    </a>
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-admin-logout
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= ORDERS CONTENT ================= -->
+            <main class="admin-content">
+
+
+                <!-- Page Header -->
+                <div class="admin-title d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+
+                    <div>
+
+                        <h1>
+                            Orders
+                        </h1>
+
+                        <p class="muted">
+                            View and manage customer orders.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-export-orders
+                    >
+                        Export
+                    </button>
+
+                </div>
+
+
+                <!-- ================= ORDERS TABLE ================= -->
+                <div class="table-card table-responsive">
+
+                    <table class="table table-striped table-hover">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Order ID
+                                </th>
+
+                                <th>
+                                    Customer
+                                </th>
+
+                                <th>
+                                    Items
+                                </th>
+
+                                <th>
+                                    Total
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- Order 1 -->
+                            <tr>
+
+                                <td>
+                                    #SS1048
+                                </td>
+
+                                <td>
+                                    Priya Shah
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    ₹2,198
+                                </td>
+
+                                <td>
+                                    13 Aug 2026
+                                </td>
+
+                                <td>
+
+                                    <span class="badge badge-green">
+                                        Delivered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="btn btn-secondary"
+                                        type="button"
+                                        data-view-order
+                                    >
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Order 2 -->
+                            <tr>
+
+                                <td>
+                                    #SS1047
+                                </td>
+
+                                <td>
+                                    Riya Patel
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    ₹1,299
+                                </td>
+
+                                <td>
+                                    13 Aug 2026
+                                </td>
+
+                                <td>
+
+                                    <span class="badge badge-blue">
+                                        Shipped
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="btn btn-secondary"
+                                        type="button"
+                                        data-view-order
+                                    >
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Order 3 -->
+                            <tr>
+
+                                <td>
+                                    #SS1046
+                                </td>
+
+                                <td>
+                                    Anaya Mehta
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    ₹899
+                                </td>
+
+                                <td>
+                                    12 Aug 2026
+                                </td>
+
+                                <td>
+
+                                    <span class="badge badge-yellow">
+                                        Processing
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="btn btn-secondary"
+                                        type="button"
+                                        data-view-order
+                                    >
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Order 4 -->
+                            <tr>
+
+                                <td>
+                                    #SS1045
+                                </td>
+
+                                <td>
+                                    Kavya Joshi
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    ₹1,748
+                                </td>
+
+                                <td>
+                                    12 Aug 2026
+                                </td>
+
+                                <td>
+
+                                    <span class="badge badge-red">
+                                        Cancelled
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="btn btn-secondary"
+                                        type="button"
+                                        data-view-order
+                                    >
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- ================= ORDER DETAILS ================= -->
+                <div
+                    class="panel order-details"
+                    id="orderDetails"
+                    hidden
+                >
+
+                    <h2>
+                        Order Details
+                    </h2>
+
+                    <p>
+                        <strong>Order ID:</strong>
+                        <span id="detailOrderId"></span>
+                    </p>
+
+                    <p>
+                        <strong>Customer:</strong>
+                        <span id="detailCustomer"></span>
+                    </p>
+
+                    <p>
+                        <strong>Items:</strong>
+                        <span id="detailItems"></span>
+                    </p>
+
+                    <p>
+                        <strong>Total:</strong>
+                        <span id="detailTotal"></span>
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong>
+                        <span id="detailDate"></span>
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+                        <span id="detailStatus"></span>
+                    </p>
+
+                </div>
+
+            </main>
+
+        </section>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
